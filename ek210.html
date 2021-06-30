@@ -143,9 +143,29 @@
 					<br><br>
 					<p>The total power consumption value helps us choose the battery to use for power supply. From the table, total power consumption = 519.9 mW. We want the battery life of the pulse oximeter to be a minimum of 2 hours. Based on these specifications, we can choose an appropriate battery.</p>
 					<p>SaO2 Concentration</p>
-					<p></p>
+					<a><img src="images/ek210/sao2.png" height="260" width="600"/></a>
+					<br><br>
+					<p>The pulse oximeter measures the blood oxygen content. To do this, it lets both red and IR light go through a certain body part (typically fingertip) and measure how much of both light are not absorbed by the blood, since oxygenated blood absorbs IR light and deoxygenated blood absorbs red light by using LEDs and photodiode sensor. By using the following equations, we can calculate the blood oxygen content when we have the light intensities.
+					</p>
+					<br>
+					<p>CAD Model</p>
+					<a><img src="images/ek210/cad.png" height="400" width="750"/></a>
+					<br><br><br><br>
+
 					<h2>6. Physical Model</h2>
-	        <p>aaaaa</p>
+	        <p>Design Process</p>
+					<p>The idea of the design comes from a clamp. A clamp can fix the finger for measurement; the photodiode and the LEDs can be integrated into upper and lower planks of a clamp respectively to measure the light absorption.
+
+						We believe that a design with high integrity and portability is good, therefore, we try to integrate everything including the Arduino, LCD screen and other components in one enclosure. The LCD screen is embedded in the upper plank of the clamp, and the Arduino Nano is in the lower plank.
+
+						Since the design is complicated in shape, CAD and 3D printing will be used for building the physical model.
+					</p>
+					<p>Clamp Mechanism</p>
+					<p>Based on our design objectives, we wanted to incorporate a simple, durable, and cost effective clamping mechanism into the device that would allow the user to easily clamp the pulse oximeter to a viable body part.
+
+						The device’s compliant clamping mechanism is cost effective in that it does not require any additional materials. The mechanism allows the material to bend and mimic a spring-like movement that allows the user to open the device by pressing down on the top and bottom ends of the mechanism and then clamp down on their finger by releasing.
+					</p>
+		
 
 
           <!-- <h1>7. Completed Project</h1>
