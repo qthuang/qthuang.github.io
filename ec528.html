@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>QH's Homepage - AI4HPCAnalytics </title>
+		<title>QH's Homepage - EBPF Networking Library </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -35,8 +35,7 @@
 
 		<!-- Banner -->
 			<section id="banner">
-				<h2>AI4HPCAnalytics </h2>
-				<!-- <p>My name pronounces like "Chin-Tian". You can also call me Gwen Kim. </p> -->
+				<h2>EBPF Networking Library </h2>
 			</section>
 
 		<!-- Main -->
@@ -46,20 +45,18 @@
 					<!-- <i class="material-icons">account_box</i> -->
 					<!-- https://material.io/resources/icons/?style=baseline -->
 					<h2>Introduction</h2>
-					<p>This is a research project at Boston University's Performance and Energy Aware Computing Laboratory (PeacLab) in collaboration with Sandia National Laboratory.
-            Based on the framework presented in the paper "Online Diagnosis of Performance Variation in HPC Systems Using Machine Learning" by Tuncer, et al, which detects and classifies the anomalies in High Performance Computing (HPC) Systems, this project aims to optimize this framework by:
-            <li>Using a Semi-supervised ML method called Active Learning instead of the supervised method in order to reduce the required labelled data samples.</li>
-            <li>Applying a sliding window to the dataset so that we can know at which time point the framework can complete the diagnosis.</li>
-            <li>Using a false positive filter to decrease false alarm rates.</li>
-            <br>
-            The non-windowing version of this project is presented in the paper "ALBADross: Active Learning Based Anomaly Diagnosis for Production HPC Systems" by Aksar, et al.
-					</p>
+					<p>
+            The goal of this project is use OPENED to extract modules from various networking programs, then identify common modules used accross these networking and place these common modules into a library which can be used by many of emerging engineering groups/startups as they develop new networking programs.
+            <li>Identify most commonly used functions across Katran and Cilium that should be part of a network library. Identification can start by doing a simple comparison of the function names/signatures extracted by OPENED from the different libraries.</li>
+            <li>Use OPENED to extract required functionality from the projects.</li>
+            <li>Use OPENED’s Hook Point transformation functionality to make library usable across hook points.</li>
+          </p>
 
+          <h2>OPENED</h2>
+          <p>OPENED is joint work with RedHat/IBM to analyze eBPF programs and decompose them into small modules tha tcan be used to create arbitrary programs. OPENED was recently accepted and presented by the Linux Plumbers Conference. There is ongoing work to make OPENED a set of production ready DevTools.</p>
 
-          <h2>Related Links</h2>
-          <p><a href="https://www.bu.edu/peaclab/research/current-projects/">Project Link</a></p>
-          <p><a href="https://ieeexplore.ieee.org/document/8466019">Online Diagnosis of Performance Variation in HPC Systems Using Machine Learning</a></p>
-          <p><a href="  https://www.bu.edu/peaclab/files/2022/10/ALBADross_Cluster_22_CR.pdf">ALBADross: Active Learning Based Anomaly Diagnosis for Production HPC Systems</a></p>
+          <br>
+          <p>The project is not open-sourced yet. I will be keeping updating this page. </p>
 
 				</div>
 			</section>
